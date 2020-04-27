@@ -1,5 +1,7 @@
 # 使用教程
 
+效果演示链接:https://www.bilibili.com/video/BV15t4y1m7UP?p=1
+
 1.注册微信开发者平台
 
 2.注册[百度开发者平台](https://console.bce.baidu.com/ai/#/ai/speech/overview/index),按照提示创建应用,返回应用列表,拿到自己的app id和secret key备用
@@ -22,7 +24,7 @@
 
 5.fork本源码(或者直接点击下载按钮,下载源码压缩包)
 
-6.导入小程序
+6.导入小程序,目录选择yingxiaoshaoPro-master即可,只要你导入了以后文件结构,跟第七步配图右侧的文件目录一样就行了.
 
 7.按提示开通云开发
 
