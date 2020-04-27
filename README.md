@@ -2,6 +2,8 @@
 
 效果演示链接:https://www.bilibili.com/video/BV15t4y1m7UP?p=1
 
+喜欢的话,请三连或者点个star支持一下,原创开发不易,谢谢!
+
 1.注册微信开发者平台
 
 2.注册[百度开发者平台](https://console.bce.baidu.com/ai/#/ai/speech/overview/index),按照提示创建应用,返回应用列表,拿到自己的app id和secret key备用
