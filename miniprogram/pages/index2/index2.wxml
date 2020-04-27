@@ -1,0 +1,59 @@
+<view class="page">
+	<form bindsubmit="submit" >
+		<view class="weui-form"  >
+
+			<view class="weui-form__text-area">
+				<view class="weui-form__title">营销号视频生成器</view>
+				<view class="weui-form__desc">仅供娱乐</view>
+			</view>
+			<view class="weui-cells__group weui-cells__group_form">
+
+				<view class="weui-cells weui-cells_form">
+
+
+					<view class="weui-cell">
+						<view class="weui-cell__hd"><label class="weui-label">主 体</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="桃子核" name='subject' />
+						</view>
+					</view>
+
+					<view class="weui-cell">
+						<view class="weui-cell__hd"><label class="weui-label">事 件</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="不能吞下去" name='event' />
+						</view>
+					</view>
+
+					<view class="weui-cell">
+						<view class="weui-cell__hd"><label class="weui-label">另一种说法</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="桃核太大了,吞下去容易噎着" name='event2' />
+						</view>
+					</view>
+
+
+
+				</view>
+			</view>
+
+
+			<view class="weui-form__opr-area">
+				<button type="primary" form-type="submit" hidden="{{button_change}}">确定</button>
+
+				<button bindtap="query" type="primary" hidden="{{!button_change}}">查询视频生成进度</button>
+			</view>
+
+			<view class="weui-form__extra-area">
+
+	<video src="{{video_url}}" hidden="{{video_hidden}}"></video>
+			</view>
+		</view>
+	</form>
+
+
+
+
+
+
+</view>
