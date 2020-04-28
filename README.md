@@ -4,7 +4,7 @@
 
 喜欢的话,请三连或者点个star支持一下,原创开发不易,谢谢!
 
-1.注册微信开发者平台
+1.注册[微信公众平台](https://mp.weixin.qq.com/),开通一个小程序
 
 2.注册[百度开发者平台](https://console.bce.baidu.com/ai/#/ai/speech/overview/index),按照提示创建应用,返回应用列表,拿到自己的app id和secret key备用
 
@@ -26,7 +26,7 @@
 
 5.fork本源码(或者直接点击下载按钮,下载源码压缩包)
 
-6.导入小程序,目录选择yingxiaoshaoPro-master即可,只要你导入了以后文件结构,跟第七步配图右侧的文件目录一样就行了.
+6.使用微信开发者工具导入小程序,目录选择yingxiaoshaoPro-master即可,只要你导入了以后文件结构,跟第七步配图右侧的文件目录一样就行了.[微信开发者工具下载](https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html)
 
 7.按提示开通云开发
 
