@@ -22,7 +22,7 @@ const id=event1.id
 
 // 务必替换百度云控制台中新建百度语音应用的 Api Key 和 Secret Key
 let client_baidu = new AipSpeech(0, 'hye8j6lriQyP0GG4jGKiTGc0', 'ZDbGoPqUYbCrt265m2rDI3IU9ua2Go7p');
-// 语音合成，保存到本地文件
+// 语音合成，保存到本地文件（必须要先写成本地mp3文件，如果直接将百度接口链接的结果作为参数给云点播接口作为音乐外部文件，虽然该链接浏览器能播放成功，但是云点播接口调用会出错）
 await client_baidu.text2audio(result, { spd: 5, per: 0 }).then(function (result) {
   if (result.data) {
     console.log('语音合成成功，文件保存到tts.mp3，打开听听吧222');
@@ -67,7 +67,7 @@ let bgm_url="https://7069-pinche-327a05-1258739777.tcb.qcloud.la/bgm.mp3?sign=9c
   let client = new VodClient(cred, "ap-guangzhou", clientProfile);
   
   let req = new models.ComposeMediaRequest();
-  
+  //坑：Tracks后的Type应该是表示的是我从源文件抽出来的素材放到最终合成文件的哪一个轨道上，更内层的TrackItems内的Type应该表示的抽取要编辑的文件的哪一个轨道。比如要要抽取视频1的图像和视频2的音频，只需要将下一行视频素材id改改即可（不要被源文件的文件类型所迷惑，应该与源文件是视频还是音频无关）
   let params = `{"Tracks":[{"Type":"Video","TrackItems":[{"Type":"Video","VideoItem":{"SourceMedia":"5285890801866756722","Duration":60}}]},{"Type":"Audio","TrackItems":[{"Type":"Audio","AudioItem":{"SourceMedia":"${audio_url}","Duration":60}}]},{"Type":"Audio","TrackItems":[{"Type":"Audio","AudioItem":{"SourceMedia":"${bgm_url}","Duration":60}}]} ],"Output":{"FileName":"hope","Container":"mp4"}}`
   
   req.from_json_string(params);
