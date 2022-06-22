@@ -11,7 +11,7 @@
   "dependencies": {
     "baidu-aip-sdk": "^2.4.6",
     "fs": "0.0.1-security",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "tencentcloud-sdk-nodejs": "^3.0.159",
     "wx-server-sdk": "~1.8.3"
   }
